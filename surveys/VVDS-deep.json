@@ -1,0 +1,13 @@
+{
+    "Survey":"VVDS-deep",
+    "Full Name":"VIMOS VLT Deep Survey - Deep",
+    "Reference":"10.1051/0004-6361:20041960",
+    "Nspec":13000,
+    "Area":0.5,
+    "Status":0,
+    "Selection Type":0,
+    "Selection Wavelength":"500-950nm",
+    "Facility":"VLT",
+    "Instrument":"VIMOS",
+    "Notes":"I_AB<24.0,24.75"
+}

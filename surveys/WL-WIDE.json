@@ -1,0 +1,13 @@
+{
+    "Survey":"WL-WIDE",
+    "Full Name":"WEAVE-LOFAR Wide",
+    "Reference":"",
+    "Nspec":300000,
+    "Area":6500.0,
+    "Status":2,
+    "Selection Type":2,
+    "Selection Wavelength":"Radio",
+    "Facility":"WHT",
+    "Instrument":"WEAVE",
+    "Notes":"S_150MHz>8mJy"
+}

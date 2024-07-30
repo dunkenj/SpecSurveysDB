@@ -1,0 +1,13 @@
+{
+    "Survey":"PRIMUS",
+    "Full Name":"Prism Multi-Object Survey",
+    "Reference":"10.1088/0004-637X/741/1/8",
+    "Nspec":120000,
+    "Area":9.1,
+    "Status":0,
+    "Selection Type":0,
+    "Selection Wavelength":"500-950nm",
+    "Facility":"Magellan",
+    "Instrument":"IMACS",
+    "Notes":"i<23.5"
+}

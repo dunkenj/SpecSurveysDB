@@ -1,0 +1,13 @@
+{
+    "Survey":"ACES",
+    "Full Name":"Arizona CDFS Environment Survey",
+    "Reference":"10.1111/j.1365-2966.2012.21524.x",
+    "Nspec":5080,
+    "Area":0.25,
+    "Status":0,
+    "Selection Type":0,
+    "Selection Wavelength":"500-950nm",
+    "Facility":"Magellan",
+    "Instrument":"IMACS",
+    "Notes":"R<24.1"
+}

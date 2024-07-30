@@ -1,0 +1,13 @@
+{
+    "Survey":"WAVES-Wide",
+    "Full Name":"Wide Area VISTA Extragalactic Survey - Wide",
+    "Reference":"10.18727/0722-6691/5126",
+    "Nspec":880000,
+    "Area":1170.0,
+    "Status":2,
+    "Selection Type":1,
+    "Selection Wavelength":"500-950nm",
+    "Facility":"4MOST",
+    "Instrument":"4MOST",
+    "Notes":"Z<21.2,photo-z<0.2"
+}

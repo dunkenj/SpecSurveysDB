@@ -1,0 +1,13 @@
+{
+    "Survey":"4HS",
+    "Full Name":"4MOST Hemisphere Survey",
+    "Reference":"",
+    "Nspec":6000000,
+    "Area":18000.0,
+    "Status":2,
+    "Selection Type":1,
+    "Selection Wavelength":"0.95-2.5µm",
+    "Facility":"4MOST",
+    "Instrument":"4MOST",
+    "Notes":"J<18,J-K<0.45"
+}

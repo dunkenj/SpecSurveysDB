@@ -1,0 +1,13 @@
+{
+    "Survey":"DEEP2",
+    "Full Name":"DEEP2 Redshift Survey",
+    "Reference":"10.1117/12.457897",
+    "Nspec":38000,
+    "Area":2.8,
+    "Status":0,
+    "Selection Type":1,
+    "Selection Wavelength":"500-950nm",
+    "Facility":"Keck",
+    "Instrument":"DEIMOS",
+    "Notes":"R_AB<24.1-C"
+}

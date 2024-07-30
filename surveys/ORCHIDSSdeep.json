@@ -1,0 +1,13 @@
+{
+    "Survey":"ORCHIDSSdeep",
+    "Full Name":"Optical Radio Continuum and HI Deep Spectroscopic Survey - Deep",
+    "Reference":"10.18727/0722-6691/5306",
+    "Nspec":82000,
+    "Area":11.0,
+    "Status":2,
+    "Selection Type":2,
+    "Selection Wavelength":"Radio",
+    "Facility":"4MOST",
+    "Instrument":"4MOST",
+    "Notes":"$S_{1.5\\mathsf{GHz}}>20\\mathsf{uJy}$, $z_{\\mathsf{phot}}<1.4$"
+}

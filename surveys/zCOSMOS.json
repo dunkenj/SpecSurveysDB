@@ -1,0 +1,13 @@
+{
+    "Survey":"zCOSMOS",
+    "Full Name":"zCOSMOS",
+    "Reference":"10.1086/516589",
+    "Nspec":25000,
+    "Area":1.7,
+    "Status":0,
+    "Selection Type":1,
+    "Selection Wavelength":"500-950nm",
+    "Facility":"VLT",
+    "Instrument":"VIMOS",
+    "Notes":"I_AB<22.5,24.0-C"
+}

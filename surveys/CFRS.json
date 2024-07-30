@@ -1,0 +1,13 @@
+{
+    "Survey":"CFRS",
+    "Full Name":"",
+    "Reference":"",
+    "Nspec":700,
+    "Area":0.14,
+    "Status":0,
+    "Selection Type":0,
+    "Selection Wavelength":"500-950nm",
+    "Facility":"",
+    "Instrument":"",
+    "Notes":"I_AB<22.5"
+}

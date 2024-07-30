@@ -1,0 +1,13 @@
+{
+    "Survey":"6dFGS",
+    "Full Name":"The 6dF Galaxy Survey",
+    "Reference":"10.1111/j.1365-2966.2004.08353.x",
+    "Nspec":125000,
+    "Area":17000.0,
+    "Status":0,
+    "Selection Type":0,
+    "Selection Wavelength":"0.95-2.5µm",
+    "Facility":"UK Schmidt Telescope",
+    "Instrument":"6dF",
+    "Notes":"K<12.7,+BRIJH"
+}

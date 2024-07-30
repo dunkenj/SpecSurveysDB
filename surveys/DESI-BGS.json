@@ -1,0 +1,13 @@
+{
+    "Survey":"DESI-BGS",
+    "Full Name":"DESI Bright Galaxy Survey",
+    "Reference":"",
+    "Nspec":10000000,
+    "Area":14200.0,
+    "Status":1,
+    "Selection Type":0,
+    "Selection Wavelength":"500-950nm",
+    "Facility":"DESI",
+    "Instrument":"DESI",
+    "Notes":"r<19.5"
+}

@@ -1,0 +1,13 @@
+{
+    "Survey":"DESI-ELG",
+    "Full Name":"DESI Emission Line Galaxy Survey",
+    "Reference":"",
+    "Nspec":16000000,
+    "Area":14200.0,
+    "Status":1,
+    "Selection Type":1,
+    "Selection Wavelength":"300-500nm",
+    "Facility":"DESI",
+    "Instrument":"DESI",
+    "Notes":"g<23.5-C"
+}

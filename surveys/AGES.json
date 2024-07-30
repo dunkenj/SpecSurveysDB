@@ -1,0 +1,13 @@
+{
+    "Survey":"AGES",
+    "Full Name":"AGN and Galaxy Evolution Survey",
+    "Reference":"10.1088/0067-0049/200/1/8",
+    "Nspec":18000,
+    "Area":7.7,
+    "Status":0,
+    "Selection Type":0,
+    "Selection Wavelength":"500-950nm",
+    "Facility":"MMT",
+    "Instrument":"Hectospec",
+    "Notes":"R<20.0,B_W<21.3"
+}

@@ -1,0 +1,13 @@
+{
+    "Survey":"WL-DEEP",
+    "Full Name":"WEAVE-LOFAR Deep",
+    "Reference":"",
+    "Nspec":300000,
+    "Area":50.0,
+    "Status":2,
+    "Selection Type":2,
+    "Selection Wavelength":"Radio",
+    "Facility":"WHT",
+    "Instrument":"WEAVE",
+    "Notes":"S_150MHz>20uJy"
+}

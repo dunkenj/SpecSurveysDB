@@ -1,0 +1,13 @@
+{
+    "Survey":"Autofib",
+    "Full Name":"Autofib Redshift Survey",
+    "Reference":"10.1093/mnras/280.1.235",
+    "Nspec":1000,
+    "Area":5.5,
+    "Status":0,
+    "Selection Type":0,
+    "Selection Wavelength":"300-500nm",
+    "Facility":"",
+    "Instrument":"",
+    "Notes":"b_J<22.0"
+}

@@ -1,0 +1,13 @@
+{
+    "Survey":"EUCLID",
+    "Full Name":"",
+    "Reference":"",
+    "Nspec":50000000,
+    "Area":15000.0,
+    "Status":1,
+    "Selection Type":1,
+    "Selection Wavelength":"0.95-2.5µm",
+    "Facility":"",
+    "Instrument":"",
+    "Notes":"H_AB<22"
+}

@@ -1,0 +1,13 @@
+{
+    "Survey":"3D-HST",
+    "Full Name":"3D-HST",
+    "Reference":"10.3847/0067-0049/225/2/27",
+    "Nspec":18900,
+    "Area":0.25,
+    "Status":0,
+    "Selection Type":0,
+    "Selection Wavelength":"0.95-2.5µm",
+    "Facility":"HST",
+    "Instrument":"WFC3",
+    "Notes":"JH<24.00-slitless"
+}

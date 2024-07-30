@@ -1,0 +1,13 @@
+{
+    "Survey":"ESP",
+    "Full Name":"ESO Slice Project",
+    "Reference":"10.48550/arXiv.astro-ph/9704097",
+    "Nspec":3300,
+    "Area":23.3,
+    "Status":0,
+    "Selection Type":0,
+    "Selection Wavelength":"300-500nm",
+    "Facility":"ESO 3.6m",
+    "Instrument":"OPTOPUS",
+    "Notes":"b_J<19.4"
+}

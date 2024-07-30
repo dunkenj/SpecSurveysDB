@@ -1,0 +1,13 @@
+{
+    "Survey":"WiggleZ",
+    "Full Name":"",
+    "Reference":"",
+    "Nspec":250000,
+    "Area":1000.0,
+    "Status":0,
+    "Selection Type":2,
+    "Selection Wavelength":"UV",
+    "Facility":"",
+    "Instrument":"",
+    "Notes":"NUV<22.8+r<22.5-C"
+}

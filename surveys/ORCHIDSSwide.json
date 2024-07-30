@@ -1,0 +1,13 @@
+{
+    "Survey":"ORCHIDSSwide",
+    "Full Name":"Optical Radio Continuum and HI Deep Spectroscopic Survey - Wide",
+    "Reference":"10.18727/0722-6691/5306",
+    "Nspec":89000,
+    "Area":55.0,
+    "Status":2,
+    "Selection Type":2,
+    "Selection Wavelength":"Radio",
+    "Facility":"4MOST",
+    "Instrument":"4MOST",
+    "Notes":"S_1.5GHz>20uJy,zp<0.57"
+}

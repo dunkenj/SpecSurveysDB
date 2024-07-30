@@ -1,0 +1,13 @@
+{
+    "Survey":"SDSS-MGS",
+    "Full Name":"SDSS Main Galaxy Sample",
+    "Reference":"10.1086/342343",
+    "Nspec":700000,
+    "Area":8000.0,
+    "Status":0,
+    "Selection Type":0,
+    "Selection Wavelength":"500-950nm",
+    "Facility":"APO",
+    "Instrument":"SDSS",
+    "Notes":"r<17.8"
+}

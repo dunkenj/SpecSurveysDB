@@ -1,0 +1,13 @@
+{
+    "Survey":"VUDS",
+    "Full Name":"VIMOS Ultra Deep Survey",
+    "Reference":"10.1051/0004-6361/201423829",
+    "Nspec":10000,
+    "Area":1.0,
+    "Status":1,
+    "Selection Type":0,
+    "Selection Wavelength":"500-950nm",
+    "Facility":"VLT",
+    "Instrument":"VIMOS",
+    "Notes":"i<27-incomplete"
+}

@@ -1,0 +1,13 @@
+{
+    "Survey":"2MRS",
+    "Full Name":"2MASS Redshift Survey",
+    "Reference":"10.1088/0067-0049/199/2/26",
+    "Nspec":43500,
+    "Area":37000.0,
+    "Status":0,
+    "Selection Type":0,
+    "Selection Wavelength":"0.95-2.5µm",
+    "Facility":"FLWO",
+    "Instrument":"FAST",
+    "Notes":"K<11.75, Multiple facilities (+CTIO, McDonald, HET)"
+}
