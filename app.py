@@ -21,7 +21,7 @@ surveys_df = [pd.read_json(survey, typ='series') for survey in surveys_jsons]
 df = pd.concat(surveys_df, axis=1).transpose()
 
 app = Dash(__name__)
-server = app.server()
+server = app.server
 
 ### Prepare the data
 #df = pd.read_csv('surveys_data_fromjsons.csv')
