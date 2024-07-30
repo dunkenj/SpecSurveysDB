@@ -21,7 +21,7 @@ surveys_df = [pd.read_json(survey, typ='series') for survey in surveys_jsons]
 df = pd.concat(surveys_df, axis=1).transpose()
 
 app = Dash(__name__)
-server = app.server
+server = app.server()
 
 ### Prepare the data
 #df = pd.read_csv('surveys_data_fromjsons.csv')
@@ -238,4 +238,4 @@ def download_filtered_data(n_clicks, status_value, facility_list):
     else:
         raise exceptions.PreventUpdate
 
-app.run_server(debug=True)
+app.run_server(host='0.0.0.0', port=8050)
