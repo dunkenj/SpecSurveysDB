@@ -1,13 +1,13 @@
 {
     "Survey":"H-AAO",
-    "Full Name":"",
-    "Reference":"",
+    "Full Name":"Hawaii+AAO (H-AAO) K-Band Redshift Survey",
+    "Reference":"10.1086/345619",
     "Nspec":1050,
     "Area":8.2,
     "Status":0,
     "Selection Type":0,
     "Selection Wavelength":"0.95-2.5µm",
-    "Facility":"",
-    "Instrument":"",
+    "Facility":"AAT",
+    "Instrument":"2dF",
     "Notes":"K<15"
 }

@@ -1,13 +1,13 @@
 {
     "Survey":"CfA2",
-    "Full Name":"",
-    "Reference":"",
+    "Full Name":"Center for Astrophysics (CfA) Redshift Survey 2",
+    "Reference":"10.1086/316343",
     "Nspec":18000,
     "Area":17000.0,
     "Status":0,
     "Selection Type":0,
     "Selection Wavelength":"300-500nm",
-    "Facility":"",
-    "Instrument":"",
+    "Facility":"FLWO 1.5m",
+    "Instrument":"FAST",
     "Notes":"B<15.5"
 }

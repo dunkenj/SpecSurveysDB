@@ -1,13 +1,13 @@
 {
     "Survey":"SAPM",
-    "Full Name":"",
-    "Reference":"",
+    "Full Name":"Stromlo-APM (SAPM) Redshift Survey",
+    "Reference":"10.1086/171284",
     "Nspec":1800,
     "Area":4300.0,
     "Status":0,
     "Selection Type":0,
     "Selection Wavelength":"300-500nm",
-    "Facility":"",
-    "Instrument":"",
+    "Facility":"MSSSO 2.3m",
+    "Instrument":"DBS",
     "Notes":"b_J<17.1"
 }

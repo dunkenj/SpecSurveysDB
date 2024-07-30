@@ -1,45 +1,34 @@
 from dash import Dash, dcc, html, Input, Output, exceptions, callback_context
-import dash_bootstrap_components as dbc
 import dash_mantine_components as dmc
 from dash_iconify import DashIconify
 import plotly.express as px
 import pandas as pd
 import numpy as np
-import astropy.units as u
 import glob
 
-max_area = (4*np.pi * u.steradian).to(u.deg**2).value
+max_area = 41252.96 # 4pi steradians in deg^2
 area_range = np.logspace(-2, np.log10(max_area), 100)
 ntotal = [1000, 1e4, 1e5, 1e6, 1e7, 1e8]
 density = [nt / area_range for nt in ntotal]
 
 surveys_jsons = glob.glob('surveys/*.json')
 surveys_jsons.sort()
-
 surveys_df = [pd.read_json(survey, typ='series') for survey in surveys_jsons]
-
-df = pd.concat(surveys_df, axis=1).transpose()
-
-app = Dash(__name__)
-server = app.server
+df = pd.concat(surveys_df, axis=1, join='outer').transpose()
 
 ### Prepare the data
-#df = pd.read_csv('surveys_data_fromjsons.csv')
 df['Density'] = df['Nspec'] / df['Area']
 
-status_types = np.array(['Complete', 'Ongoing', 'Proposed', 'Special / Unfinished'])
+status_types = np.array(['Complete', 'Ongoing', 'Proposed / Planned', 'Special / Unfinished'])
 df['Survey Status'] = status_types[np.array(df['Status'], dtype=np.int32)]
 
-wlcolm_new = {'X-ray': 0,
-              'UV': 1,
-              '300-500nm': 2,
-              '500-950nm': 3,
-              '0.95-2.5µm': 4,
-              '2.5-5µm': 5,
-              '5-1000µm': 6,
-              'Radio': 7,
+wlcolm_new = {'X-ray': 0, 'UV': 1, # X-ray-UV
+              '300-500nm': 2, '500-950nm': 3, # Optical Range
+              '0.95-2.5µm': 4, '2.5-5µm': 5, '5-1000µm': 6, # IR Ranges
+              'Radio': 7, # mm-Radio
               }
 
+### Prepare the facilities data
 collect_facilities = np.unique(df['Facility'])
 space_based = ['HST', 'JWST', 'Euclid']
 location = ['Ground-based' if facility not in space_based else 'Space-based' for facility in collect_facilities]
@@ -57,6 +46,10 @@ config = {
   'displaylogo': False,
   'modeBarButtonsToRemove': ['lasso2d', 'select2d'],
 }
+
+""" App Code """
+app = Dash(__name__)
+server = app.server
 
 app.layout = dmc.MantineProvider(
 html.Div([
@@ -84,7 +77,7 @@ html.Div([
                                 [
                                     dmc.Checkbox(label="Complete", value="Complete"),
                                     dmc.Checkbox(label="Ongoing", value="Ongoing"),
-                                    dmc.Checkbox(label="Proposed", value="Proposed"),
+                                    dmc.Checkbox(label="Proposed / Planned", value="Proposed / Planned"),
                                     dmc.Checkbox(label="Special / Unfinished", value="Special / Unfinished"),
                                 ],
                                 style={"display": "flex", "flexDirection": "column"},

@@ -1,13 +1,13 @@
 {
-    "Survey":"EUCLID",
-    "Full Name":"",
-    "Reference":"",
+    "Survey":"Euclid",
+    "Full Name":"Euclid Wide Survey",
+    "Reference":"10.1051/0004-6361/202141938",
     "Nspec":50000000,
-    "Area":15000.0,
+    "Area":14500.0,
     "Status":1,
     "Selection Type":1,
     "Selection Wavelength":"0.95-2.5µm",
-    "Facility":"",
-    "Instrument":"",
-    "Notes":"H_AB<22"
+    "Facility":"Euclid",
+    "Instrument":"NISP",
+    "Notes":"H_AB<22, Slitless spectroscopy",
 }
