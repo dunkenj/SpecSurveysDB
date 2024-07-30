@@ -6,3 +6,4 @@ dash_mantine_components==0.13.0a3
 numpy==1.23.3
 pandas==2.2.2
 plotly==5.22.0
+gunicorn
