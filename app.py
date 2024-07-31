@@ -30,7 +30,7 @@ wlcolm_new = {'X-ray': 0, 'UV': 1, # X-ray-UV
 
 ### Prepare the facilities data
 collect_facilities = np.unique(df['Facility'])
-space_based = ['HST', 'JWST', 'Euclid']
+space_based = ['HST', 'JWST', 'Euclid', 'Roman']
 location = ['Ground-based' if facility not in space_based else 'Space-based' for facility in collect_facilities]
 facility_data = [{"value": facility, "label": facility, "group": loc} for facility, loc in zip(collect_facilities, location)]
 
@@ -82,7 +82,7 @@ html.Div([
                                 ],
                                 style={"display": "flex", "flexDirection": "column"},
                             ),
-                            value=['Complete', 'Ongoing', 'Proposed', 'Special / Unfinished'],
+                            value=['Complete', 'Ongoing', 'Proposed / Planned', 'Special / Unfinished'],
                         ),
             ),
         ],),

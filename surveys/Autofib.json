@@ -7,7 +7,7 @@
     "Status":0,
     "Selection Type":0,
     "Selection Wavelength":"300-500nm",
-    "Facility":"",
-    "Instrument":"",
+    "Facility":"AAT",
+    "Instrument":"Autofib",
     "Notes":"b_J<22.0"
 }

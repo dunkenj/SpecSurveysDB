@@ -9,5 +9,5 @@
     "Selection Wavelength":"Radio",
     "Facility":"4MOST",
     "Instrument":"4MOST",
-    "Notes":"$S_{1.5\\mathsf{GHz}}>20\\mathsf{uJy}$, $z_{\\mathsf{phot}}<1.4$"
+    "Notes":"$$S_{1.5\\mathsf{GHz}}>20\\mathsf{uJy}$$, $$z_{\\mathsf{phot}}<1.4$$"
 }
