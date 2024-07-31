@@ -39,8 +39,8 @@ config = {
   'toImageButtonOptions': {
     'format': 'png', # one of png, svg, jpeg, webp
     'filename': 'spectroscopic_surveys',
-    'height': 700,
-    'width': 1000,
+    'height': 500,
+    'width': 800,
     'scale': 4 # Multiply title/legend/axis/canvas sizes by this factor
   },
   'displaylogo': False,
@@ -54,7 +54,7 @@ server = app.server
 app.layout = dmc.MantineProvider(
 html.Div([
     dmc.Container([
-    dmc.Title('Galaxy and Cosmology Spectroscopic Surveys', order=2),
+    dmc.Title('Galaxy and Cosmology Spectroscopic Surveys', order=2, align='center'),
     dcc.Graph(id="scatter-plot", mathjax=True, config=config),
     dmc.Flex([
     dmc.Button("Download data", leftIcon=DashIconify(icon="iconoir:download-circle-solid"), variant="light", color="green",
@@ -136,7 +136,7 @@ html.Div([
                     ]),
                 ]),
     ], direction='row', align='center', justify='center', gap='md'),
-    ], size=1000)]))
+    ], size=800)]))
 
 @app.callback(
     Output("scatter-plot", "figure"),
@@ -160,8 +160,9 @@ def update_bar_chart(status_value, facility_list):
                     text='Survey',
                     custom_data=['Full Name', 'Reference', 'Nspec', 'Area', 'Survey Status', 'Notes'],
                     color_discrete_sequence= px.colors.sequential.Magma_r,
-                    width=1000, height=700)
+                    width=800, height=500)
 
+    # Update hover template and marker size
     fig.update_traces(hovertemplate = 
                     r"<b>%{customdata[0]}</b><br>" +
                     "Reference: %{customdata[1]}<br>" +
@@ -171,17 +172,22 @@ def update_bar_chart(status_value, facility_list):
                     "<extra></extra>",
                     textposition='bottom center',
                     textfont_size=10,
-                    marker=dict(size=15,
-                                line=dict(width=2,
+                    marker=dict(size=10,
+                                line=dict(width=1,
                                             color='DarkSlateGrey')),
                     selector=dict(mode='markers+text'))
 
+    # Add lines for constant Nspec
     for nt, dens in zip(ntotal, density):
         fig.add_scatter(x=area_range, y=dens,
                         mode='lines',
                         line=dict(color='black', width=1, dash="dash"),
                         showlegend=False,
                         name=f"n={nt}")
+
+    # Fill non-physical sky areas
+    fig.add_vrect(x0=max_area, x1=100000, line_width=0, fillcolor="red", opacity=0.1)
+
 
     fig.update_layout(
         #title="Galaxy and Cosmology Surveys",
@@ -195,12 +201,16 @@ def update_bar_chart(status_value, facility_list):
         ),
         xaxis={'showgrid': True},
         yaxis={'showgrid': True},
-        legend=dict(title='Selection Wavelength:', orientation='v', y=0.02, x=0.02),
+        margin=dict(l=20, r=10, t=20, b=40),
+        legend=dict(title='Selection Wavelength:', orientation='v', y=0.02, x=0.02, 
+                    font=dict(size=10.5)),
     )
     fig.update_xaxes(ticklen=8, tickcolor="black", tickmode='auto', nticks=10, showgrid=True,
-                    minor=dict(ticklen=4, tickcolor="black", tickmode='auto', nticks=10, showgrid=True))
+                     showline=True, linewidth=1, linecolor='black', mirror=True,
+                     minor=dict(ticklen=4, tickcolor="black", tickmode='auto', nticks=10, showgrid=True))
     fig.update_yaxes(ticklen=8, tickcolor="black", tickmode='auto', nticks=10, showgrid=True,
-                    minor=dict(ticklen=4, tickcolor="black", tickmode='auto', nticks=10, showgrid=True))
+                     showline=True, linewidth=1, linecolor='black', mirror=True,
+                     minor=dict(ticklen=4, tickcolor="black", tickmode='auto', nticks=10, showgrid=True))
 
     return fig
 
@@ -231,4 +241,4 @@ def download_filtered_data(n_clicks, status_value, facility_list):
     else:
         raise exceptions.PreventUpdate
 
-app.run_server(host='0.0.0.0', port=8050)
+app.run_server(host='0.0.0.0', port=10000)
