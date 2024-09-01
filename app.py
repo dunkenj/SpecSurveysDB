@@ -57,7 +57,7 @@ html.Div([
     dmc.Title('Galaxy and Cosmology Spectroscopic Surveys', order=2, align='center'),
     dcc.Graph(id="scatter-plot", mathjax=True, config=config),
     dmc.Flex([
-    dmc.Button("Download data", leftIcon=DashIconify(icon="iconoir:download-circle-solid"), variant="light", color="green",
+    dmc.Button("Download datapoints", leftIcon=DashIconify(icon="iconoir:download-circle-solid"), variant="light", color="green",
                 id="btn-download-csv"),
     dcc.Download(id="download-dataframe-csv"),
     dmc.Popover(
