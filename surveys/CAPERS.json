@@ -4,7 +4,7 @@
     "Reference":"",
     "Nspec":10000,
     "Area":0.15,
-    "Status":0,
+    "Status":1,
     "Selection Type":2,
     "Selection Wavelength":"2.5-5µm",
     "Facility":"JWST",
