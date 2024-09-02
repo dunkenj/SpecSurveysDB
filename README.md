@@ -20,7 +20,7 @@ Information for each survey is defined in the corresponding '.json' file in the 
     "Reference": str # DOI to the primary survey publication,
     "Nspec": int # Number of spectra in the survey,
     "Area": float # Survey area in square degrees,
-    "Status": [0, 1, 2] # Survey status: 0 = Ongoing, 1 = Completed, 2 = Planned/Proposed,
+    "Status": [0, 1, 2] # Survey status: 0 = Complete, 1 = Ongoing, 2 = Planned/Proposed,
     "Selection Type": [0, 1, 2] # Selection type: 0 = magnitude selection, 1 = colour selection, 2 = other,
     "Selection Wavelength": str # Selection wavelength: ['X-ray', 'UV', '300-500nm', '500-950nm', '0.95-2.5µm', '2.5-5µm', '5-1000µm', 'Radio'],
     "Facility": str # Telescope / Facility used for survey,
