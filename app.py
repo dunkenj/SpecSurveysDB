@@ -79,7 +79,7 @@ app.layout = html.Div([
                         min=3,  # 10^3
                         max=8,  # 10^8
                         step=0.1,
-                        value=4,  # Default to 10^4 = 10000
+                        value=4.699,  # Default to 10^4.699 = 50000
                         marks={3: '10³', 4: '10⁴', 5: '10⁵', 6: '10⁶', 7: '10⁷', 8: '10⁸'},
                         tooltip={"placement": "bottom", "always_visible": False},
                         updatemode='mouseup'
@@ -87,10 +87,10 @@ app.layout = html.Div([
                 ], style={'width': '400px'}),
                 dmc.NumberInput(
                     id='nspec-input',
-                    value=10000,
+                    value=50000,
                     min=1000,
                     max=100000000,
-                    step=1,
+                    step=1000,
                     placeholder="Enter min Nspec",
                     style={'width': '150px'},
                     stepHoldDelay=500,
@@ -125,7 +125,7 @@ app.layout = html.Div([
         ],
     ),
     dmc.Popover(
-        width=300,
+        width=400,
         position="bottom",
         withArrow=True,
         zIndex=2000,
@@ -135,21 +135,28 @@ app.layout = html.Div([
                                          variant="light", color="violet",
                                          style={'fontFamily': 'Roboto, sans-serif'})),
             dmc.PopoverDropdown(
-                dmc.CheckboxGroup(
-                            id="resolution",
-                            label="Spectral Resolution (R)",
-                            children=html.Div(
-                                [
-                                    dmc.Checkbox(label="R < 500", value="<500"),
-                                    dmc.Checkbox(label="500 ≤ R < 1500", value="500-1500"),
-                                    dmc.Checkbox(label="1500 ≤ R < 2500", value="1500-2500"),
-                                    dmc.Checkbox(label="2500 ≤ R < 3500", value="2500-3500"),
-                                    dmc.Checkbox(label="3500 ≤ R < 5500", value="3500-5500"),
-                                ],
-                                style={"display": "flex", "flexDirection": "column"},
-                            ),
-                            value=["<500", "500-1500", "1500-2500", "2500-3500", "3500-5500"],
-                        ),
+                html.Div([
+                    html.Label("Spectral Resolution (R)", style={'fontFamily': 'Roboto, sans-serif', 'fontWeight': '500', 'marginBottom': '20px', 'display': 'block'}),
+                    dcc.RangeSlider(
+                        id="resolution",
+                        min=0,
+                        max=7000,
+                        step=100,
+                        value=[0, 7000],  # Default to full range
+                        marks={
+                            1000: '1K',
+                            3000: '3K',
+                            5000: '5K',
+                            7000: '7K'
+                        },
+                        tooltip={"placement": "bottom", "always_visible": False},
+                        updatemode='mouseup'
+                    ),
+                    html.P([
+                        html.I("If unavailable, spectral resolution uses a default value of 1000.",
+                                style={'fontFamily': 'Roboto, sans-serif', 'fontSize': '12px'})
+                    ]),
+                ], style={'padding': '15px', 'width': '350px'})
             ),
         ],),
     dmc.Popover(
@@ -226,10 +233,6 @@ app.layout = html.Div([
                         ". Incomplete/incorrect information can be also added by submitting a ",
                         dmc.Anchor("GitHub issue.", href="https://github.com/dunkenj/SpecSurveysDB/issues/new"), ],
                         style={'fontFamily': 'Roboto, sans-serif'}),
-                html.P([
-                    html.I("If unavailable, spectral resolution uses a default value of 1000.",
-                           style={'fontFamily': 'Roboto, sans-serif'})
-                ]),
             ],
             style={'margin-top': '10px'}
         )
@@ -246,7 +249,7 @@ app.layout = html.Div([
      Input("facility", "value"),
      Input("nspec-slider", "value"),
      Input("resolution", "value")])
-def update_bar_chart(status_value, facility_list, min_nspec_log, resolution_ranges):
+def update_bar_chart(status_value, facility_list, min_nspec_log, resolution_range):
 
     # Convert log scale to actual number
     min_nspec = 10 ** min_nspec_log
@@ -258,21 +261,10 @@ def update_bar_chart(status_value, facility_list, min_nspec_log, resolution_rang
     # Add Nspec filtering
     include = include & (df['Nspec'] >= min_nspec)
     
-    # Add resolution filtering
-    if len(resolution_ranges) > 0:
-        resolution_filter = pd.Series([False] * len(df), index=df.index)
-        for resolution_range in resolution_ranges:
-            if resolution_range == "<500":
-                resolution_filter = resolution_filter | (df['Resolution'] < 500)
-            elif resolution_range == "500-1500":
-                resolution_filter = resolution_filter | ((df['Resolution'] >= 500) & (df['Resolution'] < 1500))
-            elif resolution_range == "1500-2500":
-                resolution_filter = resolution_filter | ((df['Resolution'] >= 1500) & (df['Resolution'] < 2500))
-            elif resolution_range == "2500-3500":
-                resolution_filter = resolution_filter | ((df['Resolution'] >= 2500) & (df['Resolution'] < 3500))
-            elif resolution_range == "3500-5500":
-                resolution_filter = resolution_filter | ((df['Resolution'] >= 3500) & (df['Resolution'] < 5500))
-        include = include & resolution_filter
+    # Add resolution filtering with range slider
+    if resolution_range and len(resolution_range) == 2:
+        min_res, max_res = resolution_range
+        include = include & (df['Resolution'] >= min_res) & (df['Resolution'] <= max_res)
 
     sort_id = [wlcolm_new[wlcolm] for wlcolm in df['Selection Wavelength']]
     df['Sort ID'] = sort_id
@@ -290,6 +282,13 @@ def update_bar_chart(status_value, facility_list, min_nspec_log, resolution_rang
                     custom_data=['Full Name', 'Reference', 'Nspec', 'Area', 'Resolution', 'Survey Status', 'Notes'],
                     color_discrete_sequence= px.colors.sequential.Magma_r,
                     width=700, height=500)
+    # Add lines for constant Nspec
+    for nt, dens in zip(ntotal, density):
+        fig.add_scatter(x=area_range, y=dens,
+                        mode='lines',
+                        line=dict(color='#B5B5B5', width=2, dash="dash"),
+                        showlegend=False,
+                        name=f"n={nt}", zorder=0)
 
     # Update hover template and marker size
     fig.update_traces(hovertemplate = 
@@ -307,14 +306,6 @@ def update_bar_chart(status_value, facility_list, min_nspec_log, resolution_rang
                                 line=dict(width=1,
                                             color='DarkSlateGrey')),
                     selector=dict(mode='markers+text'))
-
-    # Add lines for constant Nspec
-    for nt, dens in zip(ntotal, density):
-        fig.add_scatter(x=area_range, y=dens,
-                        mode='lines',
-                        line=dict(color='black', width=1, dash="dash"),
-                        showlegend=False,
-                        name=f"n={nt}")
 
     # Fill non-physical sky areas
     fig.add_vrect(x0=max_area, x1=100000, line_width=0, fillcolor="red", opacity=0.1)
@@ -406,7 +397,7 @@ def sync_nspec_inputs(slider_value, input_value):
      Input("resolution", "value")],
     prevent_initial_call=True,
 )
-def download_filtered_data(n_clicks, status_value, facility_list, min_nspec_log, resolution_ranges):
+def download_filtered_data(n_clicks, status_value, facility_list, min_nspec_log, resolution_range):
     button_id = callback_context.triggered[0]['prop_id'].split('.')[0]
 
     if button_id == "btn-download-csv":
@@ -425,21 +416,10 @@ def download_filtered_data(n_clicks, status_value, facility_list, min_nspec_log,
         # Add Nspec filtering
         include = include & (filtered_df['Nspec'] >= min_nspec)
         
-        # Add resolution filtering
-        if len(resolution_ranges) > 0:
-            resolution_filter = pd.Series([False] * len(filtered_df), index=filtered_df.index)
-            for resolution_range in resolution_ranges:
-                if resolution_range == "<500":
-                    resolution_filter = resolution_filter | (filtered_df['Resolution'] < 500)
-                elif resolution_range == "500-1500":
-                    resolution_filter = resolution_filter | ((filtered_df['Resolution'] >= 500) & (filtered_df['Resolution'] < 1500))
-                elif resolution_range == "1500-2500":
-                    resolution_filter = resolution_filter | ((filtered_df['Resolution'] >= 1500) & (filtered_df['Resolution'] < 2500))
-                elif resolution_range == "2500-3500":
-                    resolution_filter = resolution_filter | ((filtered_df['Resolution'] >= 2500) & (filtered_df['Resolution'] < 3500))
-                elif resolution_range == "3500-5500":
-                    resolution_filter = resolution_filter | ((filtered_df['Resolution'] >= 3500) & (filtered_df['Resolution'] < 5500))
-            include = include & resolution_filter
+        # Add resolution filtering with range slider
+        if resolution_range and len(resolution_range) == 2:
+            min_res, max_res = resolution_range
+            include = include & (filtered_df['Resolution'] >= min_res) & (filtered_df['Resolution'] <= max_res)
 
         # Use .loc for proper boolean indexing
         filtered_df = filtered_df.loc[include]

@@ -1,7 +1,7 @@
 {
     "Survey": "DESI-BGS",
     "Full Name": "DESI Bright Galaxy Survey",
-    "Reference": "",
+    "Reference": "10.3847/1538-3881/accff8",
     "Nspec": 10000000,
     "Area": 14200.0,
     "Status": 1,

@@ -1,14 +1,14 @@
 {
-    "Survey": "DESI-LRG",
-    "Full Name": "DESI Luminous Red Galaxy Survey",
+    "Survey": "DESI-QSO",
+    "Full Name": "DESI Quasars Survey",
     "Reference": "10.3847/1538-3881/aca5fb",
-    "Nspec": 8000000,
+    "Nspec": 2840000,
     "Area": 14200.0,
     "Status": 1,
     "Selection Type": 1,
     "Selection Wavelength": "500-950nm",
     "Facility": "DESI",
     "Instrument": "DESI",
-    "Notes": "z<21.6-C",
+    "Notes": "16.5 < r< 23, grz-W and g-z colours",
     "Resolution": 3000
 }

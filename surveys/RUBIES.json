@@ -1,0 +1,14 @@
+{
+    "Survey": "RUBIES",
+    "Full Name": "Red Unknowns: Bright Infrared Extragalactic Survey (RUBIES)",
+    "Reference": "10.1051/0004-6361/202452186",
+    "Nspec": 4500,
+    "Area": 0.042,
+    "Status": 1,
+    "Selection Type": 2,
+    "Selection Wavelength": "2.5-5\u00b5m",
+    "Facility": "JWST",
+    "Instrument": "NIRSpec",
+    "Notes": "G395M and PRISM mode, m<sub>F444W</sub> < 28",
+    "Resolution": 1000
+}

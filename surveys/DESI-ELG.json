@@ -1,7 +1,7 @@
 {
     "Survey": "DESI-ELG",
     "Full Name": "DESI Emission Line Galaxy Survey",
-    "Reference": "",
+    "Reference": "10.3847/1538-3881/acb21",
     "Nspec": 16000000,
     "Area": 14200.0,
     "Status": 1,

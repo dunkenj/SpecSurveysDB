@@ -1,7 +1,7 @@
 {
     "Survey": "WL-MID",
     "Full Name": "WEAVE-LOFAR Mid",
-    "Reference": "",
+    "Reference": "10.1093/mnras/stad557",
     "Nspec": 300000,
     "Area": 650.0,
     "Status": 2,
