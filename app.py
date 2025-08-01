@@ -60,8 +60,11 @@ app.layout = html.Div([
     dmc.MantineProvider(
     html.Div([
     dmc.Container([
-    dmc.Title('Galaxy and Cosmology Spectroscopic Surveys', order=2, align='center', 
-              style={'fontFamily': 'Roboto, sans-serif', 'fontWeight': '500'}),
+    dmc.Group([
+        DashIconify(icon="streamline-plump:galaxy-2-solid", width=52, height=52, color="#2d5c99"),
+        dmc.Title('Galaxy and Cosmology Spectroscopic Surveys', order=2, 
+                  style={'fontFamily': 'Roboto, sans-serif', 'fontWeight': '100'})
+    ], align='center', spacing='md', mb=10, style={'justify-content': 'center'}),
     html.Div([
         dcc.Graph(id="scatter-plot", mathjax=True, config=config)
     ], style={'display': 'flex', 'justify-content': 'center', 'align-items': 'center'}),
