@@ -1,13 +1,14 @@
 {
-    "Survey":"SHELS",
-    "Full Name":"Smithsonian Hectospec Lensing Survey",
-    "Reference":"10.3847/0067-0049/224/1/11",
-    "Nspec":20700,
-    "Area":8.0,
-    "Status":0,
-    "Selection Type":0,
-    "Selection Wavelength":"500-950nm",
-    "Facility":"MMT",
-    "Instrument":"Hectospec",
-    "Notes":"R<20.6"
+    "Survey": "SHELS",
+    "Full Name": "Smithsonian Hectospec Lensing Survey",
+    "Reference": "10.3847/0067-0049/224/1/11",
+    "Nspec": 20700,
+    "Area": 8.0,
+    "Status": 0,
+    "Selection Type": 0,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "MMT",
+    "Instrument": "Hectospec",
+    "Notes": "R<20.6",
+    "Resolution": 1200
 }

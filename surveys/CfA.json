@@ -1,13 +1,14 @@
 {
-    "Survey":"CfA",
-    "Full Name":"Center for Astrophysics (CfA) Redshift Survey 2",
-    "Reference":"10.1086/159646",
-    "Nspec":2400,
-    "Area":9000.0,
-    "Status":0,
-    "Selection Type":0,
-    "Selection Wavelength":"300-500nm",
-    "Facility":"FLWO 1.5m", 
-    "Instrument":"Z-machine",
-    "Notes":"B<14.5"
+    "Survey": "CfA",
+    "Full Name": "Center for Astrophysics (CfA) Redshift Survey 2",
+    "Reference": "10.1086/159646",
+    "Nspec": 2400,
+    "Area": 9000.0,
+    "Status": 0,
+    "Selection Type": 0,
+    "Selection Wavelength": "300-500nm",
+    "Facility": "FLWO 1.5m",
+    "Instrument": "Z-machine",
+    "Notes": "B<14.5",
+    "Resolution": 1000
 }

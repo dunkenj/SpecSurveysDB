@@ -1,13 +1,14 @@
 {
-    "Survey":"SSRS2",
-    "Full Name":"Southern Sky Redshift Survey 2",
-    "Reference":"10.1086/300410",
-    "Nspec":5400,
-    "Area":5500.0,
-    "Status":0,
-    "Selection Type":0,
-    "Selection Wavelength":"300-500nm",
-    "Facility":"Compilation",
-    "Instrument":"Multiple",
-    "Notes":"B<15.5"
+    "Survey": "SSRS2",
+    "Full Name": "Southern Sky Redshift Survey 2",
+    "Reference": "10.1086/300410",
+    "Nspec": 5400,
+    "Area": 5500.0,
+    "Status": 0,
+    "Selection Type": 0,
+    "Selection Wavelength": "300-500nm",
+    "Facility": "Compilation",
+    "Instrument": "Multiple",
+    "Notes": "B<15.5",
+    "Resolution": 1000
 }

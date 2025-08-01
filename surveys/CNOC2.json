@@ -1,13 +1,14 @@
 {
-    "Survey":"CNOC2",
-    "Full Name":"Canadian Network for Observational Cosmology (CNOC2) Field Galaxy Redshift Survey",
-    "Reference":"10.1086/313426",
-    "Nspec":6000,
-    "Area":1.5,
-    "Status":0,
-    "Selection Type":0,
-    "Selection Wavelength":"500-950nm",
-    "Facility":"CFHT",
-    "Instrument":"MOS/SIS",
-    "Notes":"R<21.5"
+    "Survey": "CNOC2",
+    "Full Name": "Canadian Network for Observational Cosmology (CNOC2) Field Galaxy Redshift Survey",
+    "Reference": "10.1086/313426",
+    "Nspec": 6000,
+    "Area": 1.5,
+    "Status": 0,
+    "Selection Type": 0,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "CFHT",
+    "Instrument": "MOS/SIS",
+    "Notes": "R<21.5",
+    "Resolution": 1000
 }

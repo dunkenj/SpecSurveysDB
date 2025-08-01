@@ -1,13 +1,14 @@
 {
-    "Survey":"CFRS",
-    "Full Name":"Canada-France Redshift Survey",
-    "Reference":"10.1086/176555",
-    "Nspec":700,
-    "Area":0.14,
-    "Status":0,
-    "Selection Type":0,
-    "Selection Wavelength":"500-950nm",
-    "Facility":"CFHT",
-    "Instrument":"MOS-SIS",
-    "Notes":"I_AB<22.5"
+    "Survey": "CFRS",
+    "Full Name": "Canada-France Redshift Survey",
+    "Reference": "10.1086/176555",
+    "Nspec": 700,
+    "Area": 0.14,
+    "Status": 0,
+    "Selection Type": 0,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "CFHT",
+    "Instrument": "MOS-SIS",
+    "Notes": "I<sub>AB</sub> < 22.5",
+    "Resolution": 1000
 }

@@ -1,13 +1,14 @@
 {
-    "Survey":"SDSS-S82",
-    "Full Name":"SDSS Stripe 82",
-    "Reference":"10.1086/497917",
-    "Nspec":70000,
-    "Area":275.0,
-    "Status":3,
-    "Selection Type":1,
-    "Selection Wavelength":"300-500nm",
-    "Facility":"APO",
-    "Instrument":"SDSS",
-    "Notes":"u<20.5-C,r<19.5-C"
+    "Survey": "SDSS-S82",
+    "Full Name": "SDSS Stripe 82",
+    "Reference": "10.1086/497917",
+    "Nspec": 70000,
+    "Area": 275.0,
+    "Status": 3,
+    "Selection Type": 1,
+    "Selection Wavelength": "300-500nm",
+    "Facility": "APO",
+    "Instrument": "SDSS",
+    "Notes": "u<20.5-C,r<19.5-C",
+    "Resolution": 2000
 }

@@ -1,13 +1,14 @@
 {
-    "Survey":"WiggleZ",
-    "Full Name":"WiggleZ Dark Energy Survey",
-    "Reference":"10.1093/mnras/stx2963",
-    "Nspec":250000,
-    "Area":1000.0,
-    "Status":0,
-    "Selection Type":2,
-    "Selection Wavelength":"UV",
-    "Facility":"AAT",
-    "Instrument":"AAOmega",
-    "Notes":"NUV<22.8+r<22.5-C"
+    "Survey": "WiggleZ",
+    "Full Name": "WiggleZ Dark Energy Survey",
+    "Reference": "10.1093/mnras/stx2963",
+    "Nspec": 250000,
+    "Area": 1000.0,
+    "Status": 0,
+    "Selection Type": 2,
+    "Selection Wavelength": "UV",
+    "Facility": "AAT",
+    "Instrument": "AAOmega",
+    "Notes": "NUV<22.8+r<22.5-C",
+    "Resolution": 1500
 }

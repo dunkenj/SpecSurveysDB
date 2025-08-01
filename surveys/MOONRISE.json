@@ -1,13 +1,14 @@
 {
-    "Survey":"MOONRISE",
-    "Full Name":"MOONRISE",
-    "Reference":"10.18727/0722-6691/5197",
-    "Nspec":461700,
-    "Area":7,
-    "Status":2,
-    "Selection Type":0,
-    "Selection Wavelength":"0.95-2.5µm",
-    "Facility":"VLT",
-    "Instrument":"MOONS",
-    "Notes":"H<23-26"
+    "Survey": "MOONRISE",
+    "Full Name": "MOONRISE",
+    "Reference": "10.18727/0722-6691/5197",
+    "Nspec": 461700,
+    "Area": 7,
+    "Status": 2,
+    "Selection Type": 0,
+    "Selection Wavelength": "0.95-2.5\u00b5m",
+    "Facility": "VLT",
+    "Instrument": "MOONS",
+    "Notes": "H<23-26",
+    "Resolution": 5000
 }

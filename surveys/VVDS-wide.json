@@ -1,13 +1,14 @@
 {
-    "Survey":"VVDS-wide",
-    "Full Name":"VIMOS VLT Deep Survey - Wide",
-    "Reference":"10.1051/0004-6361:20078878",
-    "Nspec":35000,
-    "Area":12.0,
-    "Status":0,
-    "Selection Type":0,
-    "Selection Wavelength":"500-950nm",
-    "Facility":"VLT",
-    "Instrument":"VIMOS",
-    "Notes":"I_AB<22.5"
+    "Survey": "VVDS-wide",
+    "Full Name": "VIMOS VLT Deep Survey - Wide",
+    "Reference": "10.1051/0004-6361:20078878",
+    "Nspec": 35000,
+    "Area": 12.0,
+    "Status": 0,
+    "Selection Type": 0,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "VLT",
+    "Instrument": "VIMOS",
+    "Notes": "I<sub>AB</sub> < 22.5",
+    "Resolution": 600
 }

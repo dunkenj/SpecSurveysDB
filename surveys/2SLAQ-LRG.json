@@ -1,13 +1,14 @@
 {
-    "Survey":"2SLAQ-LRG",
-    "Full Name":"2dF-SDSS LRG and QSO",
-    "Reference":"10.1111/j.1365-2966.2006.10875.x",
-    "Nspec":13000,
-    "Area":180.0,
-    "Status":0,
-    "Selection Type":2,
-    "Selection Wavelength":"500-950nm",
-    "Facility":"AAT",
-    "Instrument":"2dF",
-    "Notes":"i<19.8-C"
+    "Survey": "2SLAQ-LRG",
+    "Full Name": "2dF-SDSS LRG and QSO",
+    "Reference": "10.1111/j.1365-2966.2006.10875.x",
+    "Nspec": 13000,
+    "Area": 180.0,
+    "Status": 0,
+    "Selection Type": 2,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "AAT",
+    "Instrument": "2dF",
+    "Notes": "i<19.8-C",
+    "Resolution": 700
 }

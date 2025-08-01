@@ -1,13 +1,14 @@
 {
-    "Survey":"LCRS",
-    "Full Name":"Las Campanas Redshift Survey",
-    "Reference":"10.1086/177858",
-    "Nspec":26000,
-    "Area":700.0,
-    "Status":0,
-    "Selection Type":0,
-    "Selection Wavelength":"500-950nm",
-    "Facility":"Las Campanas 2.5m",
-    "Instrument":"Las Campanas Fibre System",
-    "Notes":"R<17.5"
+    "Survey": "LCRS",
+    "Full Name": "Las Campanas Redshift Survey",
+    "Reference": "10.1086/177858",
+    "Nspec": 26000,
+    "Area": 700.0,
+    "Status": 0,
+    "Selection Type": 0,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "Las Campanas 2.5m",
+    "Instrument": "Las Campanas Fibre System",
+    "Notes": "R<17.5",
+    "Resolution": 1000
 }

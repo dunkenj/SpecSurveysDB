@@ -1,13 +1,14 @@
 {
-    "Survey":"MGC",
-    "Full Name":"Millenium Galaxy Catalogue",
-    "Reference":"10.1046/j.1365-8711.2003.06826.x",
-    "Nspec":10000,
-    "Area":37.5,
-    "Status":0,
-    "Selection Type":0,
-    "Selection Wavelength":"300-500nm",
-    "Facility":"",
-    "Instrument":"",
-    "Notes":"B<20.0"
+    "Survey": "MGC",
+    "Full Name": "Millenium Galaxy Catalogue",
+    "Reference": "10.1046/j.1365-8711.2003.06826.x",
+    "Nspec": 10000,
+    "Area": 37.5,
+    "Status": 0,
+    "Selection Type": 0,
+    "Selection Wavelength": "300-500nm",
+    "Facility": "",
+    "Instrument": "",
+    "Notes": "B<20.0",
+    "Resolution": 1000
 }

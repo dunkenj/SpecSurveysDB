@@ -1,13 +1,14 @@
 {
-    "Survey":"LBG-z3",
-    "Full Name":"Lyman Break Galaxies at z ~ 3 ",
-    "Reference":"10.1086/375772",
-    "Nspec":940,
-    "Area":0.38,
-    "Status":0,
-    "Selection Type":2,
-    "Selection Wavelength":"500-950nm",
-    "Facility":"Keck",
-    "Instrument":"LRIS",
-    "Notes":"R_AB<25.5"
+    "Survey": "LBG-z3",
+    "Full Name": "Lyman Break Galaxies at z ~ 3 ",
+    "Reference": "10.1086/375772",
+    "Nspec": 940,
+    "Area": 0.38,
+    "Status": 0,
+    "Selection Type": 2,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "Keck",
+    "Instrument": "LRIS",
+    "Notes": "R<sub>AB</sub> < 25.5",
+    "Resolution": 1000
 }

@@ -1,13 +1,14 @@
 {
-    "Survey":"4MOST-AGN",
-    "Full Name":"4MOST Active Galactic Nuclei",
-    "Reference":"10.18727/0722-6691/5125",
-    "Nspec":1000000,
-    "Area":10000.0,
-    "Status":2,
-    "Selection Type":1,
-    "Selection Wavelength":"X-ray",
-    "Facility":"4MOST",
-    "Instrument":"4MOST",
-    "Notes":"eROSITA, + IR selection"
+    "Survey": "4MOST-AGN",
+    "Full Name": "4MOST Active Galactic Nuclei",
+    "Reference": "10.18727/0722-6691/5125",
+    "Nspec": 1000000,
+    "Area": 10000.0,
+    "Status": 2,
+    "Selection Type": 1,
+    "Selection Wavelength": "X-ray",
+    "Facility": "4MOST",
+    "Instrument": "4MOST",
+    "Notes": "eROSITA, + IR selection",
+    "Resolution": 5000
 }

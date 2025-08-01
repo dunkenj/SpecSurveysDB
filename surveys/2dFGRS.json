@@ -1,13 +1,14 @@
 {
-    "Survey":"2dFGRS",
-    "Full Name":"2 Degree Field Galaxy Redshift Survey",
-    "Reference":"10.1046/j.1365-8711.2001.04902.x",
-    "Nspec":220000,
-    "Area":1500.0,
-    "Status":0,
-    "Selection Type":0,
-    "Selection Wavelength":"300-500nm",
-    "Facility":"AAT",
-    "Instrument":"2dF",
-    "Notes":"b_J<19.4"
+    "Survey": "2dFGRS",
+    "Full Name": "2 Degree Field Galaxy Redshift Survey",
+    "Reference": "10.1046/j.1365-8711.2001.04902.x",
+    "Nspec": 220000,
+    "Area": 1500.0,
+    "Status": 0,
+    "Selection Type": 0,
+    "Selection Wavelength": "300-500nm",
+    "Facility": "AAT",
+    "Instrument": "2dF",
+    "Notes": "b<sub>J</sub> < 19.4",
+    "Resolution": 700
 }

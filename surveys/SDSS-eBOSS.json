@@ -1,13 +1,14 @@
 {
-    "Survey":"SDSS-BOSS",
-    "Full Name":"SDSS Extended Baryon Oscillation Spectroscopic Survey",
-    "Reference":"10.3847/0004-6256/151/2/44",
-    "Nspec":1327500,
-    "Area":7500,
-    "Status":0,
-    "Selection Type":2,
-    "Selection Wavelength":"500-950nm",
-    "Facility":"APO",
-    "Instrument":"BOSS",
-    "Notes":"i<19.9-C"
+    "Survey": "SDSS-BOSS",
+    "Full Name": "SDSS Extended Baryon Oscillation Spectroscopic Survey",
+    "Reference": "10.3847/0004-6256/151/2/44",
+    "Nspec": 1327500,
+    "Area": 7500,
+    "Status": 0,
+    "Selection Type": 2,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "APO",
+    "Instrument": "BOSS",
+    "Notes": "i<19.9-C",
+    "Resolution": 2000
 }

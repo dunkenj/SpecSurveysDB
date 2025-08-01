@@ -1,13 +1,14 @@
 {
-    "Survey":"CRS-BG",
-    "Full Name":"Cosmology Redshift Survey - Bright Galaxies",
-    "Reference":"10.18727/0722-6691/5127",
-    "Nspec":1348903,
-    "Area":5700,
-    "Status":2,
-    "Selection Type":1,
-    "Selection Wavelength":"500-950nm",
-    "Facility":"4MOST",
-    "Instrument":"4MOST",
-    "Notes":"r<19,photo-z<0.5"
+    "Survey": "CRS-BG",
+    "Full Name": "Cosmology Redshift Survey - Bright Galaxies",
+    "Reference": "10.18727/0722-6691/5127",
+    "Nspec": 1348903,
+    "Area": 5700,
+    "Status": 2,
+    "Selection Type": 1,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "4MOST",
+    "Instrument": "4MOST",
+    "Notes": "r<19,photo-z<0.5",
+    "Resolution": 5000
 }

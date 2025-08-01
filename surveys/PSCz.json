@@ -1,13 +1,14 @@
 {
-    "Survey":"PSCz",
-    "Full Name":"IRAS Point Source Catalog Redshift Survey",
+    "Survey": "PSCz",
+    "Full Name": "IRAS Point Source Catalog Redshift Survey",
     "Reference": "10.1046/j.1365-8711.2000.03528.x",
-    "Nspec":15000,
-    "Area":34000.0,
-    "Status":0,
-    "Selection Type":0,
-    "Selection Wavelength":"5-1000µm",
-    "Facility":"Compilation",
-    "Instrument":"Multiple",
-    "Notes":"60-micron_AB<9.5, CfA2/SSRS + Primary additional spectra from INT-IDS."
+    "Nspec": 15000,
+    "Area": 34000.0,
+    "Status": 0,
+    "Selection Type": 0,
+    "Selection Wavelength": "5-1000\u00b5m",
+    "Facility": "Compilation",
+    "Instrument": "Multiple",
+    "Notes": "60-micron<sub>AB</sub> < 9.5, CfA2/SSRS + Primary additional spectra from INT-IDS.",
+    "Resolution": 1000
 }

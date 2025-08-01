@@ -1,13 +1,14 @@
 {
-    "Survey":"DURS",
-    "Full Name":"Durham-UKST Redshift Survey",
-    "Reference":"10.1093/mnras/281.3.L47",
-    "Nspec":2500,
-    "Area":1500.0,
-    "Status":0,
-    "Selection Type":0,
-    "Selection Wavelength":"300-500nm",
-    "Facility":"UKST",
-    "Instrument":"FLAIR",
-    "Notes":"b_J<17.0"
+    "Survey": "DURS",
+    "Full Name": "Durham-UKST Redshift Survey",
+    "Reference": "10.1093/mnras/281.3.L47",
+    "Nspec": 2500,
+    "Area": 1500.0,
+    "Status": 0,
+    "Selection Type": 0,
+    "Selection Wavelength": "300-500nm",
+    "Facility": "UKST",
+    "Instrument": "FLAIR",
+    "Notes": "b<sub>J</sub> < 17.0",
+    "Resolution": 1000
 }

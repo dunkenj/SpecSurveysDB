@@ -1,13 +1,14 @@
 {
-    "Survey":"WL-MID",
-    "Full Name":"WEAVE-LOFAR Mid",
-    "Reference":"",
-    "Nspec":300000,
-    "Area":650.0,
-    "Status":2,
-    "Selection Type":2,
-    "Selection Wavelength":"Radio",
-    "Facility":"WHT",
-    "Instrument":"WEAVE",
-    "Notes":"S_150MHz>0.8mJy"
+    "Survey": "WL-MID",
+    "Full Name": "WEAVE-LOFAR Mid",
+    "Reference": "",
+    "Nspec": 300000,
+    "Area": 650.0,
+    "Status": 2,
+    "Selection Type": 2,
+    "Selection Wavelength": "Radio",
+    "Facility": "WHT",
+    "Instrument": "WEAVE",
+    "Notes": "S<sub>150MHz</sub> > 0.8 mJy",
+    "Resolution": 5000
 }

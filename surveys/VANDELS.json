@@ -1,13 +1,14 @@
 {
-    "Survey":"VANDELS",
-    "Full Name":"VANDELS",
-    "Reference":"10.1051/0004-6361/202040059",
-    "Nspec":2087,
-    "Area":0.2,
-    "Status":0,
-    "Selection Type":0,
-    "Selection Wavelength":"500-950nm",
-    "Facility":"VLT",
-    "Instrument":"VIMOS",
-    "Notes":"i<25"
+    "Survey": "VANDELS",
+    "Full Name": "VANDELS",
+    "Reference": "10.1051/0004-6361/202040059",
+    "Nspec": 2087,
+    "Area": 0.2,
+    "Status": 0,
+    "Selection Type": 0,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "VLT",
+    "Instrument": "VIMOS",
+    "Notes": "i<25",
+    "Resolution": 600
 }

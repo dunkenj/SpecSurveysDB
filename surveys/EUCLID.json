@@ -1,13 +1,14 @@
 {
-    "Survey":"Euclid",
-    "Full Name":"Euclid Wide Survey",
-    "Reference":"10.1051/0004-6361/202141938",
-    "Nspec":50000000,
-    "Area":14500.0,
-    "Status":1,
-    "Selection Type":1,
-    "Selection Wavelength":"0.95-2.5µm",
-    "Facility":"Euclid",
-    "Instrument":"NISP",
-    "Notes":"H_AB<22, Slitless spectroscopy"
+    "Survey": "Euclid",
+    "Full Name": "Euclid Wide Survey",
+    "Reference": "10.1051/0004-6361/202141938",
+    "Nspec": 50000000,
+    "Area": 14500.0,
+    "Status": 1,
+    "Selection Type": 1,
+    "Selection Wavelength": "0.95-2.5\u00b5m",
+    "Facility": "Euclid",
+    "Instrument": "NISP",
+    "Notes": "H<sub>AB</sub> < 22, Slitless spectroscopy",
+    "Resolution": 380
 }

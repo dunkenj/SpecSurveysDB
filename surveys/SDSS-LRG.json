@@ -1,13 +1,14 @@
 {
-    "Survey":"SDSS-LRG",
-    "Full Name":"SDSS Luminous Red Galaxies",
-    "Reference":"10.1086/323717",
-    "Nspec":100000,
-    "Area":8000.0,
-    "Status":0,
-    "Selection Type":2,
-    "Selection Wavelength":"500-950nm",
-    "Facility":"APO",
-    "Instrument":"SDSS",
-    "Notes":"r<19.5-C"
+    "Survey": "SDSS-LRG",
+    "Full Name": "SDSS Luminous Red Galaxies",
+    "Reference": "10.1086/323717",
+    "Nspec": 100000,
+    "Area": 8000.0,
+    "Status": 0,
+    "Selection Type": 2,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "APO",
+    "Instrument": "SDSS",
+    "Notes": "r<19.5-C",
+    "Resolution": 2000
 }

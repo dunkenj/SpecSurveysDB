@@ -1,13 +1,14 @@
 {
-    "Survey":"MOSDEF",
-    "Full Name":"MOSFIRE Deep Evolution Field Survey",
-    "Reference":"10.1088/0067-0049/218/2/15",
-    "Nspec":1500,
-    "Area":0.17,
-    "Status":0,
-    "Selection Type":0,
-    "Selection Wavelength":"0.95-2.5µm",
-    "Facility":"Keck",
-    "Instrument":"MOSFIRE",
-    "Notes":"H<24,24.5,25"
+    "Survey": "MOSDEF",
+    "Full Name": "MOSFIRE Deep Evolution Field Survey",
+    "Reference": "10.1088/0067-0049/218/2/15",
+    "Nspec": 1500,
+    "Area": 0.17,
+    "Status": 0,
+    "Selection Type": 0,
+    "Selection Wavelength": "0.95-2.5\u00b5m",
+    "Facility": "Keck",
+    "Instrument": "MOSFIRE",
+    "Notes": "H<24,24.5,25",
+    "Resolution": 3500
 }

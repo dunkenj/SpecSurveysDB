@@ -1,13 +1,14 @@
 {
-    "Survey":"GAMA",
-    "Full Name":"Galaxy And Mass Assembly Survey",
-    "Reference":"10.1111/j.1365-2966.2010.16282.x",
-    "Nspec":256000,
-    "Area":285.0,
-    "Status":0,
-    "Selection Type":0,
-    "Selection Wavelength":"500-950nm",
-    "Facility":"AAT",
-    "Instrument":"AAOmega",
-    "Notes":"r<19.8,+zK"
+    "Survey": "GAMA",
+    "Full Name": "Galaxy And Mass Assembly Survey",
+    "Reference": "10.1111/j.1365-2966.2010.16282.x",
+    "Nspec": 256000,
+    "Area": 285.0,
+    "Status": 0,
+    "Selection Type": 0,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "AAT",
+    "Instrument": "AAOmega",
+    "Notes": "r<19.8,+zK",
+    "Resolution": 1500
 }

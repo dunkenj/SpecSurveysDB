@@ -1,13 +1,14 @@
 {
-    "Survey":"CRS-LRG",
-    "Full Name":"Cosmology Redshift Survey - Luminous Red Galaxies",
-    "Reference":"10.18727/0722-6691/5127",
-    "Nspec":2603270,
-    "Area":7000,
-    "Status":2,
-    "Selection Type":1,
-    "Selection Wavelength":"500-950nm",
-    "Facility":"4MOST",
-    "Instrument":"4MOST",
-    "Notes":"Z<21.6,photo-z<1.2"
+    "Survey": "CRS-LRG",
+    "Full Name": "Cosmology Redshift Survey - Luminous Red Galaxies",
+    "Reference": "10.18727/0722-6691/5127",
+    "Nspec": 2603270,
+    "Area": 7000,
+    "Status": 2,
+    "Selection Type": 1,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "4MOST",
+    "Instrument": "4MOST",
+    "Notes": "Z<21.6,photo-z<1.2",
+    "Resolution": 5000
 }

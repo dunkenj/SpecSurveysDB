@@ -1,13 +1,14 @@
 {
-    "Survey":"DEVILS",
-    "Full Name":"Deep Extragalactic VIsible Legacy Survey",
-    "Reference":"10.1093/mnras/sty1553",
-    "Nspec":60000,
-    "Area":6.0,
-    "Status":1,
-    "Selection Type":0,
-    "Selection Wavelength":"0.95-2.5µm",
-    "Facility":"AAT",
-    "Instrument":"AAOmega",
-    "Notes":"Y<21.2"
+    "Survey": "DEVILS",
+    "Full Name": "Deep Extragalactic VIsible Legacy Survey",
+    "Reference": "10.1093/mnras/sty1553",
+    "Nspec": 60000,
+    "Area": 6.0,
+    "Status": 1,
+    "Selection Type": 0,
+    "Selection Wavelength": "0.95-2.5\u00b5m",
+    "Facility": "AAT",
+    "Instrument": "AAOmega",
+    "Notes": "Y<21.2",
+    "Resolution": 1500
 }

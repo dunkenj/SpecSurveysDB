@@ -1,0 +1,14 @@
+{
+    "Survey": "PFS-Galaxy",
+    "Full Name": "Prime Focus Spectrograph Galaxy Survey",
+    "Reference": "10.48550/arXiv.2206.14908",
+    "Nspec": 300000,
+    "Area": 15.0,
+    "Status": 1,
+    "Selection Type": 1,
+    "Selection Wavelength": "0.95-2.5\u00b5m",
+    "Facility": "Subaru",
+    "Instrument": "PFS",
+    "Notes": "0.7 < z < 2 (Continuum), 2.1 < z < 6.6 (IGM/LBG/LAE)",
+    "Resolution": 3000
+}
