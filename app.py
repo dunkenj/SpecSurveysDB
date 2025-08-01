@@ -51,13 +51,23 @@ config = {
 app = Dash(__name__)
 server = app.server
 
-app.layout = dmc.MantineProvider(
-html.Div([
+app.layout = html.Div([
+    # Add Google Fonts link for Roboto
+    html.Link(
+        rel='stylesheet',
+        href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'
+    ),
+    dmc.MantineProvider(
+    html.Div([
     dmc.Container([
-    dmc.Title('Galaxy and Cosmology Spectroscopic Surveys', order=2, align='center'),
-    dcc.Graph(id="scatter-plot", mathjax=True, config=config),
+    dmc.Title('Galaxy and Cosmology Spectroscopic Surveys', order=2, align='center', 
+              style={'fontFamily': 'Roboto, sans-serif', 'fontWeight': '500'}),
+    html.Div([
+        dcc.Graph(id="scatter-plot", mathjax=True, config=config)
+    ], style={'display': 'flex', 'justify-content': 'center', 'align-items': 'center'}),
     dmc.Container([
-        dmc.Text("Minimum Number of Spectra (Nspec)", size="sm", weight=500, mb=5, align="center"),
+        dmc.Text("Minimum Number of Spectra (Nspec)", size="sm", weight=500, mb=5, align="center",
+                 style={'fontFamily': 'Roboto, sans-serif'}),
         html.Div([
             dmc.Group([
                 html.Div([
@@ -94,7 +104,9 @@ html.Div([
         zIndex=2000,
         shadow="md",
         children=[
-            dmc.PopoverTarget(dmc.Button("Facilities", leftIcon=DashIconify(icon="solar:telescope-linear"), variant="light", color="indigo")),
+            dmc.PopoverTarget(dmc.Button("Facilities", leftIcon=DashIconify(icon="solar:telescope-linear"), 
+                                         variant="light", color="indigo", 
+                                         style={'fontFamily': 'Roboto, sans-serif'})),
             dmc.PopoverDropdown(
                 dmc.MultiSelect(
                     label="Limit to specific facilities/telescopes",
@@ -104,6 +116,7 @@ html.Div([
                     value=[],
                     searchable=True,
                     nothingFound="No options found",
+                    style={'fontFamily': 'Roboto, sans-serif'}
                 )
             ),
         ],
@@ -116,7 +129,8 @@ html.Div([
         shadow="md",
         children=[
             dmc.PopoverTarget(dmc.Button("Spectral Resolution", leftIcon=DashIconify(icon="iconoir:microscope"), 
-                                         variant="light", color="violet")),
+                                         variant="light", color="violet",
+                                         style={'fontFamily': 'Roboto, sans-serif'})),
             dmc.PopoverDropdown(
                 dmc.CheckboxGroup(
                             id="resolution",
@@ -142,7 +156,9 @@ html.Div([
         zIndex=2000,
         shadow="md",
         children=[
-            dmc.PopoverTarget(dmc.Button("Survey status", leftIcon=DashIconify(icon="iconoir:timer"), variant="light", color="orange")),
+            dmc.PopoverTarget(dmc.Button("Survey status", leftIcon=DashIconify(icon="iconoir:timer"), 
+                                         variant="light", color="orange",
+                                         style={'fontFamily': 'Roboto, sans-serif'})),
             dmc.PopoverDropdown(
                 dmc.CheckboxGroup(
                             id="status",
@@ -161,15 +177,17 @@ html.Div([
                         ),
             ),
         ],),
-    dmc.Button("Download datapoints", leftIcon=DashIconify(icon="iconoir:download-circle-solid"), variant="light", color="green",
-                id="btn-download-csv"),
+    dmc.Button("Download datapoints", leftIcon=DashIconify(icon="iconoir:download-circle-solid"), 
+               variant="light", color="green", id="btn-download-csv",
+               style={'fontFamily': 'Roboto, sans-serif'}),
     dcc.Download(id="download-dataframe-csv"),
     dmc.HoverCard(
             shadow="md", width=200, position="bottom",
             children=[dmc.HoverCardTarget(dmc.Avatar(DashIconify(icon="iconoir:info-circle", width=30), variant="gradient",
             gradient={"from": "lime", "to": "orange", "deg": 0}, size=35, radius="xl")),
                       dmc.HoverCardDropdown([
-                        dmc.Text("Developed and maintained by Kenneth Duncan", align="center"),
+                        dmc.Text("Developed and maintained by Kenneth Duncan", align="center",
+                                style={'fontFamily': 'Roboto, sans-serif'}),
                         dmc.Group(
                             [
                                 dmc.Anchor(
@@ -193,7 +211,31 @@ html.Div([
                     ]),
                 ]),
     ], direction='row', align='center', justify='center', gap='md'),
-    ], size=800)]))
+    html.Div([
+        html.Br(),  # Proper line break
+        html.H3("Notes", style={'fontFamily': 'Roboto, sans-serif', 'fontWeight': '500'}),
+        html.Div(
+            [
+                html.P("Hover over points to see survey details, including notes on selection criteria and references. Click on a point to open the reference in a new tab.",
+                       style={'fontFamily': 'Roboto, sans-serif'}),
+                html.P(["Additional surveys can be added by submitting a pull request with a .json file following the ",
+                        dmc.Anchor("format used in this project", href="https://github.com/dunkenj/SpecSurveysDB/tree/main/surveys"), 
+                        ". Incomplete/incorrect information can be also added by submitting a ",
+                        dmc.Anchor("GitHub issue.", href="https://github.com/dunkenj/SpecSurveysDB/issues/new"), ],
+                        style={'fontFamily': 'Roboto, sans-serif'}),
+                html.P([
+                    html.I("If unavailable, spectral resolution uses a default value of 1000.",
+                           style={'fontFamily': 'Roboto, sans-serif'})
+                ]),
+            ],
+            style={'margin-top': '10px'}
+        )
+    ]),
+    ], size=800),
+    html.Div(id='dummy-output', style={'display': 'none'}),  # Hidden div for clientside callback
+    ])
+    )
+])
 
 @app.callback(
     Output("scatter-plot", "figure"),
@@ -244,7 +286,7 @@ def update_bar_chart(status_value, facility_list, min_nspec_log, resolution_rang
                     text='Survey',
                     custom_data=['Full Name', 'Reference', 'Nspec', 'Area', 'Resolution', 'Survey Status', 'Notes'],
                     color_discrete_sequence= px.colors.sequential.Magma_r,
-                    width=800, height=500)
+                    width=700, height=500)
 
     # Update hover template and marker size
     fig.update_traces(hovertemplate = 
@@ -253,7 +295,8 @@ def update_bar_chart(status_value, facility_list, min_nspec_log, resolution_rang
                     "Status: <i>%{customdata[5]}</i><br><br>" +
                     r"N<sub>spec</sub> = %{customdata[2]:,.2s} over %{customdata[3]:,.2r} deg²<br>" +
                     r"Spectral Resolution: R ~ %{customdata[4]}<br>" +
-                    "Selection notes: %{customdata[6]}" +
+                    "Selection notes: %{customdata[6]}<br><br>" +
+                    "<i>Click to open reference</i>" +
                     "<extra></extra>",
                     textposition='bottom center',
                     textfont_size=10,
@@ -304,6 +347,7 @@ def update_bar_chart(status_value, facility_list, min_nspec_log, resolution_rang
         xaxis_title=r"$$\mathsf{Survey\,area}\,(\mathsf{deg}^{\mathsf{2}})$$",
         yaxis_title=r"$$\mathsf{Source\,density}\,(\mathsf{deg}^{\mathsf{-2}})$$",
         font=dict(
+            family="Roboto, sans-serif",
             size=14,
             color="black"
         ),
@@ -402,4 +446,33 @@ def download_filtered_data(n_clicks, status_value, facility_list, min_nspec_log,
     else:
         raise exceptions.PreventUpdate
 
-app.run_server(host='0.0.0.0', port=10000)
+# Clientside callback to handle click events and open references
+app.clientside_callback(
+    """
+    function(clickData) {
+        if (clickData && clickData.points && clickData.points.length > 0) {
+            var point = clickData.points[0];
+            if (point.customdata && point.customdata[1]) {
+                var reference = point.customdata[1];
+                // Check if reference contains a DOI or URL
+                if (reference.startsWith('10.')) {
+                    // It's a DOI, construct URL
+                    var url = 'https://doi.org/' + reference;
+                } else if (reference.startsWith('http')) {
+                    // It's already a URL
+                    var url = reference;
+                } else {
+                    // For other cases, try to construct DOI URL
+                    var url = 'https://doi.org/' + reference;
+                }
+                window.open(url, '_blank');
+            }
+        }
+        return '';
+    }
+    """,
+    Output('dummy-output', 'children'),  # Use proper dummy output
+    Input('scatter-plot', 'clickData')
+)
+
+app.run_server(host='0.0.0.0', port=10000) # Default port changed to 10000
