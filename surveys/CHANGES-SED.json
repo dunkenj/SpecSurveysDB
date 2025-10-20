@@ -1,0 +1,14 @@
+{
+    "Survey": "ChANGES-SED",
+    "Full Name": "Chilean AGN/Galaxy Extragalactic Survey - SED",
+    "Reference": "10.18727/0722-6691/5309",
+    "Nspec": 630000,
+    "Area": 18000.0,
+    "Status": 2,
+    "Selection Type": 1,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "4MOST",
+    "Instrument": "4MOST",
+    "Notes": "DELVE+VHS+WISE SED Selected AGN",
+    "Resolution": 5000
+}
