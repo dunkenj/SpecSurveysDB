@@ -1,0 +1,14 @@
+{
+    "Survey": "CHANCES",
+    "Full Name": "CHileAN Cluster galaxy Evolution Survey",
+    "Reference": "10.18727/0722-6691/5308",
+    "Nspec": 300000,
+    "Area": 1330.0,
+    "Status": 2,
+    "Selection Type": 0,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "4MOST",
+    "Instrument": "4MOST",
+    "Notes": "0 < z < 0.45, r<20.5",
+    "Resolution": 5000
+}

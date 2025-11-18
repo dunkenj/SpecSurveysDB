@@ -1,0 +1,14 @@
+{
+    "Survey": "4MOST-Clusters",
+    "Full Name": "4MOST galaxy Clusters Survey",
+    "Reference": "10.18727/0722-6691/5124",
+    "Nspec": 1700000,
+    "Area": 10000.0,
+    "Status": 2,
+    "Selection Type": 0,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "4MOST",
+    "Instrument": "4MOST",
+    "Notes": "eROSITA Clusters",
+    "Resolution": 5000
+}

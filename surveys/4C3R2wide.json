@@ -1,0 +1,14 @@
+{
+    "Survey": "4C3R2 Wide",
+    "Full Name": "4MOST Complete Calibration of the Colour Redshift Relation - Wide",
+    "Reference": "10.18727/0722-6691/5307",
+    "Nspec": 500000,
+    "Area": 1100.0,
+    "Status": 2,
+    "Selection Type": 0,
+    "Selection Wavelength": "500-950nm",
+    "Facility": "4MOST",
+    "Instrument": "4MOST",
+    "Notes": "SOM Cell, 0.2 < z < 1.55, Z < 22",
+    "Resolution": 5000
+}
